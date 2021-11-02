@@ -2,10 +2,6 @@
   <a href="https://spring.io" target="blank"><img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" width="320" alt="Spring Logo" /></a>
 </p>
 
-<p align="center">
-  <a href="https://spring.io" target="blank"><img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" width="320" alt="Spring Logo" /></a>
-</p>
-
 <p align="center">A progressive <a href="https://www.oracle.com/in/java/" target="_blank">Java</a> framework for building efficient and scalable server-side applications.</p>
 
 ## Getting Started
