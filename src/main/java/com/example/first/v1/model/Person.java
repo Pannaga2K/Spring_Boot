@@ -1,19 +1,23 @@
-package com.example.first.model;
+package com.example.first.v1.model;
 
 import java.util.UUID;
+
+import javax.validation.constraints.*;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
-// import javax.validation.constraints.NotBlank;
 
 public class Person {
     private final UUID id;
-    // @NotBlank
+    @NotBlank
     private final String name;
 
+    // CONSTRUCTOR
     public Person(@JsonProperty("id") UUID id,@JsonProperty("name") String name) {
         this.id = id;
         this.name = name;
     }
 
+    // GETTERS
     public UUID getId() {
         return id;
     }

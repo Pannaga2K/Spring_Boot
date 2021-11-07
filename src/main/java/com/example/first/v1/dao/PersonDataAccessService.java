@@ -1,15 +1,16 @@
-package com.example.first.dao;
+package com.example.first.v1.dao;
 
-import java.util.List;
 import java.util.ArrayList;
-import java.util.UUID;
+import java.util.List;
 import java.util.Optional;
-import com.example.first.model.Person;
+import java.util.UUID;
+
+import com.example.first.v1.model.Person;
+
 import org.springframework.stereotype.Repository;
 
-@Repository("dummyDao")
-public class DummyPersonAccess implements PersonDao {
-
+@Repository("db")
+public class PersonDataAccessService implements PersonDao {
     private static List<Person> DB = new ArrayList<>();
 
     @Override

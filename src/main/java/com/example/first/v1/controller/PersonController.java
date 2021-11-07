@@ -1,10 +1,14 @@
-package com.example.first.api;
+package com.example.first.v1.controller;
 
 import java.util.List;
 import java.util.UUID;
-import com.example.first.model.Person;
-import com.example.first.service.PersonService;
+import javax.validation.Valid;
+
+import com.example.first.v1.model.Person;
+import com.example.first.v1.service.PersonService;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,7 +30,7 @@ public class PersonController {
 
     // INSERT
     @PostMapping
-    public void addPerson(@RequestBody Person person) {
+    public void addPerson(@Valid @NonNull @RequestBody Person person) {
         personService.addPerson(person);
     }
 
@@ -50,7 +54,7 @@ public class PersonController {
 
     // UPDATE
     @PutMapping(path = "{id}")
-    public void updatePersonById(@PathVariable("id") UUID id, @RequestBody Person person) {
+    public void updatePersonById(@PathVariable("id") UUID id, @Valid @NonNull @RequestBody Person person) {
         personService.updatePeopleById(id, person);
     }
 
