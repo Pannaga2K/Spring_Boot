@@ -18,3 +18,12 @@ CONTROLLERS
 SERVICES
     - THE SUBSEQUENT METHODS
 ```
+
+## Versions
+
+```
+v1
+    - WITHOUT DB
+v2
+    - WITH POSTGRESQL
+```
